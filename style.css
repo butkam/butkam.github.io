@@ -85,7 +85,7 @@ span.slogan {
 	font-size: 18px;
 	position: relative;
 	display: block;
-	margin: 25px 0 0 0;
+	margin: 5px 25px 0 0;
 	text-rendering: optimizeLegibility;
   	font-feature-settings: "kern" 1;
 }
