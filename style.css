@@ -117,13 +117,13 @@ input {
 }
 
 button {
+	font-family: 'ClearSans', Helvetica, Arial, sans-serif;
 	background-color: #ed588d;
 	border-style: none;
 	width: 110px;
 	height: 35px;
 	vertical-align: 1px;
 	font-size: 18px;
-	box-shadow: -4px -4px #ca4b7b inset;
 	cursor: pointer;
 	color: #303030;
 }
@@ -156,8 +156,7 @@ li {
 
 .year {
 	display: block;
-	position: absolute;
-	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 @font-face {
