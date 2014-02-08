@@ -167,7 +167,12 @@ li {
         url('ClearSans-Regular.ttf')  format('truetype');
 }
 
-@font-face { font-family: 'Marmelad';
-	src: url('Marmelad-Regular.ttf') format('truetype'); }
+@font-face {
+	font-family: 'Marmelad';
+	src: url('Marmelad-Regular.ttf') format('truetype');
+}
 
-@font-face { font-family: 'Brandon'; src: url('Brandon_blk.otf'); }
+@font-face {
+	font-family: 'Brandon';
+	src: url('Brandon_blk.otf');
+}
