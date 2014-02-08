@@ -161,17 +161,17 @@ li {
 
 @font-face {
     font-family: 'ClearSans';
-    src: url('ClearSans-Regular.eot') format('embedded-opentype'), 
-        url('ClearSans-Regular.woff') format('woff'), 
-        url('ClearSans-Regular.ttf')  format('truetype');
+    src: url('fonts/ClearSans-Regular.eot') format('embedded-opentype'), 
+        url('fonts/ClearSans-Regular.woff') format('woff'), 
+        url('fonts/ClearSans-Regular.ttf')  format('truetype');
 }
 
 @font-face {
 	font-family: 'Marmelad';
-	src: url('Marmelad-Regular.ttf') format('truetype');
+	src: url('fonts/Marmelad-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Brandon';
-	src: url('Brandon_blk.otf');
+	src: url('fonts/Brandon_blk.otf');
 }
