@@ -59,8 +59,24 @@ a:visited {
 
 a.lang {
 	float: right;
-	margin: -20px 30px;
+	margin: -15px 35px;
 	letter-spacing: 2px;
+	height: 23px;
+	width: 20px;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+a.lang:hover {
+	border-bottom: 1px solid;
+}
+
+a.lang:visited {
+	color: #008ACE;
+}
+
+a.lang:active {
+	color: #FF3333;
 }
 
 em {
@@ -122,7 +138,7 @@ span.slogan {
 .feedback {
 	background-image: url('img/u3.png');
 	margin: 35px auto 50px;
-	height: 330px;
+	height: 230px;
 }
 
 .email {
