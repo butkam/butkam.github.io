@@ -49,6 +49,20 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+a:link {
+	color: #008ACE;
+}
+
+a:visited {
+	color: #B40EB4;
+}
+
+a.lang {
+	float: right;
+	margin: -20px 30px;
+	letter-spacing: 2px;
+}
+
 em {
 	font-style: italic;
 }
@@ -56,10 +70,6 @@ em {
 p {
 	margin-top: 25px;
 	color: #303030;
-}
-
-li {
-	font-size: 14px;
 }
 
 h2 {
@@ -87,6 +97,7 @@ h3 {
 
 span.slogan {
 	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
 	position: relative;
 	display: block;
 	margin: 5px 25px 0 0;
@@ -102,7 +113,7 @@ span.slogan {
 
 .label {
 	font-family: 'ClearSans', Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	position: absolute;
 	margin-top: -25px;
 	margin-left: 9px;
@@ -116,7 +127,7 @@ span.slogan {
 
 .email {
 	margin-top: 5px;
-	margin: 65px auto 0;
+	margin: 35px auto 0;
 	width: 580px;
 }
 
@@ -164,8 +175,9 @@ footer {
 }
 
 .contacts {
-	margin: 26px 0 0 9px;
-	font-size: 14px;
+	font-size: 18px;
+	width: 580px;
+	margin: 20px auto;
 }
 
 @font-face {
