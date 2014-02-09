@@ -68,12 +68,12 @@ em {
 }
 
 p {
-	margin-top: 25px;
+	margin-top: 15px;
 	color: #303030;
 }
 
 h2 {
-	font-family: 'Marmelad', sans-serif;
+	font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
 	font-size: 28px;
 	margin: 37px 0 5px 0;
 	padding: 6px 0;
@@ -81,7 +81,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'Marmelad', sans-serif;
+	font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	padding: 45px 0 0 0;
 	text-align: center;
@@ -122,7 +122,7 @@ span.slogan {
 .feedback {
 	background-image: url('img/u3.png');
 	margin: 35px auto 50px;
-	height: 450px;
+	height: 330px;
 }
 
 .email {
@@ -185,11 +185,6 @@ footer {
     src: url('fonts/ClearSans-Regular.eot') format('embedded-opentype'), 
         url('fonts/ClearSans-Regular.woff') format('woff'), 
         url('fonts/ClearSans-Regular.ttf')  format('truetype');
-}
-
-@font-face {
-	font-family: 'Marmelad';
-	src: url('fonts/Marmelad-Regular.ttf') format('truetype');
 }
 
 @font-face {
