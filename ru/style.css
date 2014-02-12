@@ -105,20 +105,21 @@ h3 {
 
 .logo {
 	font-family: Brandon, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background-image: url('img/cotred.png');
+	width: 286px;
+	height: 69px;
 	color: #ed588d;
 	font-size: 96px;
-	text-align: center;
-	margin: 40px 0 60px 0;
+	margin: 35px auto;
 }
 
 span.slogan {
-	font-size: 18px;
-	font-family: Arial, Helvetica, sans-serif;
-	position: relative;
+	font-size: 16px;
+	font-family: 'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	display: block;
-	margin: 5px 25px 0 0;
-	text-rendering: optimizeLegibility;
-  	font-feature-settings: "kern" 1;
+	text-align: center;
+	margin: -25px 0 0 -15px;
+	color: #ed588d;
 }
 
 .content {
@@ -136,7 +137,6 @@ span.slogan {
 }
 
 .feedback {
-	/*background-image: url('http:/tred.co/fonts/img/u3.png');*/
 	margin: 35px auto 50px;
 	height: 210px;
 }
@@ -207,4 +207,106 @@ footer {
 @font-face {
 	font-family: 'Brandon';
 	src: url('fonts/Brandon_blk.otf');
+}
+
+@media screen and (max-device-width: 640px) and (orientation: portrait){
+  
+	h2 {
+		font-size: 62px;
+		margin: 67px 0 5px 0;
+	}
+
+	.content {
+		width: 850px;
+	}
+
+	body {
+		font-size: 46px;
+	}
+
+	.logo {
+		background-image: url('img/logo@2x.png');
+		width: 612px;
+		height: 178px;
+		margin: 15px auto;
+	}
+
+	span.slogan {
+		font-size: 34px;
+		color: #ed588d;
+		margin: -25px auto;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 48px;
+	}
+
+	.contacts {
+		font-size: 38px;
+		width: 750px;
+	}
+	.bullet {
+		font-size: 32px;
+	}
+
+	.year {
+		margin: 250px 0 150px 0;
+		width: 950px;
+		text-align: center;
+	}
+	footer {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-device-width: 960px) and (orientation: landscape){
+
+	h2 {
+		font-size: 62px;
+		margin: 67px 0 5px 0;
+	}
+
+	.content {
+		width: 850px;
+	}
+
+	body {
+		font-size: 46px;
+	}
+
+	.logo {
+		background-image: url('img/logo@2x.png');
+		width: 612px;
+		height: 178px;
+		margin: 15px auto;
+	}
+
+	span.slogan {
+		font-size: 34px;
+		color: #ed588d;
+		margin: -25px auto;
+		text-align: center;
+	}
+	
+	h3 {
+		font-size: 48px;
+	}
+
+	.contacts {
+		font-size: 38px;
+		width: 750px;
+	}
+	.bullet {
+		font-size: 32px;
+	}
+
+	.year {
+		margin: 250px 0 150px 0;
+		width: 950px;
+		text-align: center;
+	}
+	footer {
+		font-size: 28px;
+	}
 }
