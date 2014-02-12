@@ -110,17 +110,16 @@ h3 {
 	height: 69px;
 	color: #ed588d;
 	font-size: 96px;
-	margin: 0 auto;
+	margin: 35px auto;
 }
 
 span.slogan {
-	font-size: 18px;
-	font-family: Arial, Helvetica, sans-serif;
-	position: relative;
+	font-size: 16px;
+	font-family: 'HelveticaNeue-Light', "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	display: block;
-	margin: 5px 25px 0 0;
-	text-rendering: optimizeLegibility;
-  	font-feature-settings: "kern" 1;
+	text-align: center;
+	margin: -25px 0 0 -15px;
+	color: #ed588d;
 }
 
 .content {
