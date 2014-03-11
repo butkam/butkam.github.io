@@ -79,6 +79,10 @@ a.lang:active {
 	color: #FF3333;
 }
 
+a.logo {
+	display: block;
+}
+
 em {
 	font-style: italic;
 }
