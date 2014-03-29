@@ -64,7 +64,8 @@
 
 			function sendEmail()
 			{
-				var email = document.sendEmail.submit();
+				// var email = document.findElementById.submit();
+				$('form#sendEmail').submit();
 			}
 
 			var email = Parse.Object.extend("email");
