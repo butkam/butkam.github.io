@@ -67,7 +67,7 @@
 			var UserEmail = Parse.Object.extend("UserEmail");
 			var userEmail = new UserEmail();
 
-			gameScore.save(null, {
+			userEmail.save(null, {
 			success: function(userEmail) {
 			
 				    alert('New object created with objectId: ' + gameScore.id);
