@@ -62,30 +62,20 @@
 		</footer>
 		<script>
 
-			function sendEmail()
-			{
-				// var email = document.findElementById.submit();
-				$('form#sendEmail').submit();
-			}
+			var userEmail = $('form#sendEmail').submit();
 
-			var email = Parse.Object.extend("email");
-			var email = new email();
-			var email = document.sendEmail.submit();
-			 
-			email.set(email);
-			 
-			email.save(null,
-			{
-			success: function(email)
-			{
-			// Execute any logic that should take place after the object is saved.
-			alert('New object created with objectId: ' + email.id);
-			},
-				error: function(email, error) {
-				// Execute any logic that should take place if the save fails.
-				// error is a Parse.Error with an error code and description.
-				alert('Failed to create new object, with error code: ' + error.description);
-			}
+			var UserEmail = Parse.Object.extend("UserEmail");
+			var userEmail = new UserEmail();
+
+			gameScore.save(null, {
+			success: function(userEmail) {
+			
+				    alert('New object created with objectId: ' + gameScore.id);
+				},
+			error: function(userEmail, error) {
+			
+					alert('Failed to create new object, with error code: ' + error.description);
+				}
 			});
 
 			Parse.initialize("Im6zn3uSDvj6IGp6jKIaG27LUrO4NeA0ld72ZfZZ", "zWsVL1EHUonbznb2NwfMWvOGsDeDptF7iTzDCY1C");
