@@ -63,11 +63,11 @@
 		<script>
 			Parse.initialize("Im6zn3uSDvj6IGp6jKIaG27LUrO4NeA0ld72ZfZZ", "zWsVL1EHUonbznb2NwfMWvOGsDeDptF7iTzDCY1C");
 
-			var email = $('form#sendEmail').submit();
+			var email = document.getElementById("sendEmail").submit();
 
 			var UserEmail = Parse.Object.extend("UserEmail");
 			var userEmail = new TestObject();
-			userEmail.save({foo: email}).then(function(object);
+			userEmail.save({email: email}).then(function(object);
 		</script>
 	</body>
 </html>
