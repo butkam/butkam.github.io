@@ -45,11 +45,14 @@
 					<ul class="contacts">
 								<li>We have obsessive-compulsive email checking disorder, so you’ll receive a reply in less than no time: <a href="mailto:mail@tred.co?Subject=" target="_top">mail@tred.co</a></li>
 					</ul>
-					<!-- <div class="email">
+					<div class="email">
+						<form id="sendEmail"action="">
 						Too shy to write us first? No worries, we will break the ice
-						<input type="Email" placeholder="Email">
-						<button>Send</button>
-					</div> -->
+						<input name="sendEmail" type="Email" placeholder="Email">
+						<button type="submit" onclick="sendEmail()">Send</button>
+						<!-- <input type="button" onclick="sendEmail()" value="Send"> -->
+						</form>
+					</div>
 			</div>
 		<footer>
 			<div class="year">
@@ -58,25 +61,33 @@
 			</div>
 		</footer>
 		<script>
-			Parse.initialize("Im6zn3uSDvj6IGp6jKIaG27LUrO4NeA0ld72ZfZZ", "zWsVL1EHUonbznb2NwfMWvOGsDeDptF7iTzDCY1C");
 
-			var user = new Parse.User();
-			user.set("username", "my name");
-			user.set("password", "my pass");
-			user.set("email", "email@example.com");
+			function sendEmail()
+			{
+				var email = document.sendEmail.submit();
+			}
 
-			// other fields can be set just like with Parse.Object
-			user.set("phone", "650-555-0000");
-
-			user.signUp(null, {
-				success: function(user) {
-			    // Hooray! Let them use the app now.
-				},
-				error: function(user, error) {
-				    // Show the error message somewhere and let the user try again.
-				    alert("Error: " + error.code + " " + error.message);
-				}
+			var email = Parse.Object.extend("email");
+			var email = new email();
+			var email = document.sendEmail.submit();
+			 
+			email.set(email);
+			 
+			email.save(null,
+			{
+			success: function(email)
+			{
+			// Execute any logic that should take place after the object is saved.
+			alert('New object created with objectId: ' + email.id);
+			},
+				error: function(email, error) {
+				// Execute any logic that should take place if the save fails.
+				// error is a Parse.Error with an error code and description.
+				alert('Failed to create new object, with error code: ' + error.description);
+			}
 			});
+
+			Parse.initialize("Im6zn3uSDvj6IGp6jKIaG27LUrO4NeA0ld72ZfZZ", "zWsVL1EHUonbznb2NwfMWvOGsDeDptF7iTzDCY1C");
 		</script>
 	</body>
 </html>
