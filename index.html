@@ -63,21 +63,11 @@
 		<script>
 			Parse.initialize("Im6zn3uSDvj6IGp6jKIaG27LUrO4NeA0ld72ZfZZ", "zWsVL1EHUonbznb2NwfMWvOGsDeDptF7iTzDCY1C");
 
-			var userEmail = $('form#sendEmail').submit();
+			var email = $('form#sendEmail').submit();
 
 			var UserEmail = Parse.Object.extend("UserEmail");
-			var userEmail = new UserEmail();
-
-			userEmail.save(null, {
-			success: function(userEmail) {
-			
-				    alert('New object created with objectId: ' + gameScore.id);
-				},
-			error: function(userEmail, error) {
-			
-					alert('Failed to create new object, with error code: ' + error.description);
-				}
-			});
+			var userEmail = new TestObject();
+			userEmail.save({foo: email}).then(function(object);
 		</script>
 	</body>
 </html>
