@@ -52,10 +52,10 @@
 						<button type="submit" onclick="sendEmail()">Send</button>
 						</form>
 					</div> -->
-					<form method="post" name="sendEmail" action="SendEmail">
-						Too shy to write us first? No worries, we will break the ice
-						<input type="text" name="email">
-						<input type="submit" value="Submit">
+
+					<form id="form" onsubmit="return false;">
+			    		<input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="sendEmail" />
+			    		<input style="position:absolute; top:50%; left:5%; width:40%;" type="submit" onclick="sendEmail();" />
 					</form>
 			</div>
 		<footer>
@@ -71,9 +71,10 @@
 			var sendEmail = new SendEmail();
 			sendEmail.save({email: SendEmail});
 
-			var frmvalidator  = new Validator("sendEmail");
-			frmvalidator.addValidation("email","req","Please provide your email");
-			frmvalidator.addValidation("email","email", "Please enter a valid email address");
+			function sendEmail() {
+			    var input = document.getElementById("sendEmail").value;
+			    alert(input);
+			}
 		</script>
 	</body>
 </html>
