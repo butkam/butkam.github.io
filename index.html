@@ -52,6 +52,11 @@
 						<button type="submit" onclick="sendEmail()">Send</button>
 						</form>
 					</div> -->
+					<form method="post" name="sendEmail" action="SendEmail">
+						Too shy to write us first? No worries, we will break the ice
+						<input type="text" name="email">
+						<input type="submit" value="Submit">
+					</form>
 			</div>
 		<footer>
 			<div class="year">
@@ -59,8 +64,16 @@
 				2014
 			</div>
 		</footer>
-		<script>
+		<script language="JavaScript">
 			Parse.initialize("Im6zn3uSDvj6IGp6jKIaG27LUrO4NeA0ld72ZfZZ", "zWsVL1EHUonbznb2NwfMWvOGsDeDptF7iTzDCY1C");
+
+			var SendEmail = Parse.Object.extend("SendEmail");
+			var sendEmail = new SendEmail();
+			sendEmail.save({email: SendEmail});
+
+			var frmvalidator  = new Validator("sendEmail");
+			frmvalidator.addValidation("email","req","Please provide your email");
+			frmvalidator.addValidation("email","email", "Please enter a valid email address");
 		</script>
 	</body>
 </html>
