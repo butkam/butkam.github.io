@@ -45,18 +45,13 @@
 					<ul class="contacts">
 								<li>We have obsessive-compulsive email checking disorder, so you’ll receive a reply in less than no time: <a href="mailto:mail@tred.co?Subject=" target="_top">mail@tred.co</a></li>
 					</ul>
-					<div class="email">
+<!-- 					<div class="email">
 						<form id="SendEmail" onsubmit="return false;">
 						Too shy to write us first? No worries, we will break the ice
 						<input type="email" id="sendEmail" name="sendEmail" placeholder="Email" />
 						<input type="submit" onclick="sendEmail()" value="Send" />
 						</form>
-					</div>
-
-<!-- 					<form id="form" onsubmit="return false;">
-			    		<input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="sendEmail" />
-			    		<input style="position:absolute; top:50%; left:5%; width:40%;" type="submit" onclick="sendEmail();" />
-					</form> -->
+					</div> -->
 			</div>
 		<footer>
 			<div class="year">
@@ -70,11 +65,6 @@
 			var SendEmail = Parse.Object.extend("SendEmail");
 			var sendEmail = new SendEmail();
 			sendEmail.save({email: SendEmail});
-
-			function sendEmail() {
-			    var input = document.getElementById('sendEmail').value;
-			    alert(input);
-			}
 		</script>
 	</body>
 </html>
